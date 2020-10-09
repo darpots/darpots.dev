@@ -107,21 +107,18 @@
             my legacy.
           </p>
           <p>
-            Over 20 years experience in the IT sector in various roles,
-            support, technical, managerial and operational.  Web
-            development started as a bit of an accident, just as a general
-            interest a few years ago as something to keep me occupied. Then you enter the rabbit hole....
+            Over 20 years experience in the IT sector in various roles, support,
+            technical, managerial and operational. Web development started as a
+            bit of an accident, just as a general interest a few years ago as
+            something to keep me occupied. Then you enter the rabbit hole....
           </p>
 
-
-
-            <div class="columns download">
-              <!-- <p>
+          <div class="columns download">
+            <!-- <p>
                 <a href="#" class="button"
                   ><i class="fa fa-download"></i>Download Resume</a
                 >
               </p> -->
-            </div>
           </div>
           <!-- end row -->
         </div>
@@ -504,35 +501,17 @@
       <div class="row">
         <div class="eight columns">
           <!-- form -->
-          <form action="https://formspree.io/f/meqpendo" method="post" id="contactForm" name="contactForm">
+          <form action="https://formspree.io/f/meqpendo" method="POST">
             <fieldset>
-              <div>
-                <label for="contactName"
-                  >Name <span class="required">*</span></label
-                >
-                <input
-                  type="text"
-                  value=""
-                  size="35"
-                  id="contactName"
-                  name="name"
-                />
-              </div>
-
               <div>
                 <label for="contactEmail"
                   >Email <span class="required">*</span></label
                 >
-                <input
-                  type="text"
-                  value=""
-                  size="35"
-                  id="contactEmail"
-                  name="_replyto"
-                />
+
+                <input type="text" name="_replyto" />
               </div>
 
-              <div>
+              <!-- <div>
                 <label for="contactSubject">Subject</label>
                 <input
                   type="text"
@@ -541,22 +520,18 @@
                   id="contactSubject"
                   name="contactSubject"
                 />
-              </div>
+              </div> -->
 
               <div>
                 <label for="contactMessage"
                   >Message <span class="required">*</span></label
                 >
-                <textarea
-                  cols="50"
-                  rows="15"
-                  id="contactMessage"
-                  name="message"
-                ></textarea>
+                <textarea name="message"></textarea>
               </div>
 
               <div>
-                <button class="submit" type='submit'>Submit</button>
+                <button class="submit" type="submit">Submit</button>
+
                 <span id="image-loader">
                   <img alt="" src="images/loader.gif" />
                 </span>
@@ -574,39 +549,24 @@
         </div>
 
         <aside class="four columns footer-widgets">
-          <div class="widget widget_contact">
-            <h4>Details</h4>
-            <p class="address">
-              Darren Potter<br />
-              nr Bath, Wiltshire <br />
-              United Kingdom<br />
-              <!-- <span>(123) 456-7890</span> -->
-            </p>
-          </div>
-
           <div class="widget widget_tweets">
-            <h4 class="widget-title">Latest Tweets</h4>
+            <h4 class="widget-title">Twitter</h4>
 
-            <ul id="twitter">
-              <li>
-                <span>
-                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum
-                  <a href="#">http://t.co/CGIrdxIlI3</a>
-                </span>
-                <b><a href="#">2 Days Ago</a></b>
-              </li>
-              <li>
-                <span>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi
-                  <a href="#">http://t.co/CGIrdxIlI3</a>
-                </span>
-                <b><a href="#">3 Days Ago</a></b>
-              </li>
-            </ul>
+            <script
+              async
+              src="http://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+
+            <a
+              class="twitter-timeline"
+              href="https://twitter.com/darpots"
+              data-tweet-limit="1"
+              data-theme="dark"
+              data-chrome="noheader nofooter noborders transparent"
+            >
+              Tweets by @TwitterDev
+            </a>
           </div>
         </aside>
       </div>
